@@ -1,49 +1,73 @@
-# ⚽ SportOracle
+# ⚽ sportOracle
 
-**Real-Time Sports Intelligence MCP Server**
+**Consumer MCP Server** — 12 tools | Part of [ToolOracle](https://tooloracle.io)
 
-12 MCP tools | Part of [ToolOracle](https://tooloracle.io) | Live at `tooloracle.io/sport/mcp/`
+![Tools](https://img.shields.io/badge/MCP_Tools-12-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
 
 ## Quick Connect
 
 ```bash
+# Claude Desktop / Cursor / Windsurf
 npx -y mcp-remote https://tooloracle.io/sport/mcp/
 ```
 
-## Tools
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "sportoracle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/sport/mcp/"]
+    }
+  }
+}
+```
 
-| Tool | Cost | Description |
-|------|------|-------------|
-| `scores` | 3u | Live & today's scores |
-| `standings` | 3u | Current league table |
-| `team` | 3u | Team profile & stats |
-| `player` | 3u | Player profile & career stats |
-| `fixtures` | 3u | Upcoming matches |
-| `results` | 3u | Recent results |
-| `leagues` | 3u | Available leagues & competitions |
-| `search_team` | 2u | Search teams by name |
-| `search_player` | 2u | Search players by name |
-| `top_scorers` | 3u | League top scorers |
-| `news` | 3u | Latest sports news |
-| `health_check` | 0u | Service health status |
+## Tools (12)
+
+| Tool | Description |
+|------|-------------|
+| `sport_scores` | Live and today's scores for any sport/league. Returns live, final and upcoming g |
+| `sport_standings` | Current league table / standings with points, wins, losses, goal difference. |
+| `sport_team` | Team profile: stadium, capacity, founded year, manager/coach, country, league. |
+| `sport_player` | Player profile: nationality, position, team, height, weight, date of birth. |
+| `sport_fixtures` | Next upcoming fixtures for a team. |
+| `sport_results` | Last 10 results for a team with scores. |
+| `sport_leagues` | Browse all supported leagues. Filter by sport: soccer, football, basketball, bas |
+| `sport_search_team` | Search for teams by name. Returns team ID, sport, league, country, stadium. |
+| `sport_search_player` | Search for players by name. Returns nationality, position, team, birth date. |
+| `sport_top_scorers` | Top scorers / statistical leaders for a league. |
+| `sport_news` | Latest sports news headlines from ESPN. |
+| `health_check` | SportOracle server status and backend connectivity. |
 
 ## Pricing
 
-| Tier | Price | Units/month |
-|------|-------|-------------|
-| Free | $0 | 50 |
-| Starter | $49 | 500 |
-| Pro | $149 | 2,000 |
-| Agency | $349 | 6,000 |
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
 
-1 unit = $0.01 | x402 USDC micropayments on Base supported
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
-## About ToolOracle
+## Part of ToolOracle
 
-ToolOracle delivers 24 AI-native intelligence products via MCP (Model Context Protocol). 230+ tools across SEO, e-commerce, crypto, travel, weather, sports, entertainment, B2B intelligence and more.
+sportOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
 
-[tooloracle.io](https://tooloracle.io) | [All Products](https://tooloracle.io/#products)
 
-## License
 
-MIT
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
+
+## Links
+
+- 🌐 Live: `https://tooloracle.io/sport/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
