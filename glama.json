@@ -1,1 +1,14 @@
-{"name": "SportOracle", "description": "Live sports \u2014 12 MCP tools for scores, standings, fixtures, player stats", "category": "travel", "tags": ["sports", "scores", "football", "live"], "tools": 12, "transport": "streamable-http", "endpoint": "https://tooloracle.io/sport/mcp/"}
+{
+  "name": "SportOracle",
+  "description": "Real-Time Sports Intelligence \u2014 scores, standings, stats, schedules across major leagues via MCP",
+  "repository": "https://github.com/ToolOracle/sportoracle",
+  "endpoint": "https://tooloracle.io/sport/mcp/",
+  "tools": 12,
+  "license": "MIT",
+  "author": "FeedOracle Technologies",
+  "tags": [
+    "sports",
+    "mcp",
+    "ai-agent"
+  ]
+}
