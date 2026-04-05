@@ -1,0 +1,5 @@
+name: SportOracle
+description: Sports data & analytics — 10 tools
+endpoint: https://tooloracle.io/sport/mcp/
+transport: streamable-http
+license: MIT
